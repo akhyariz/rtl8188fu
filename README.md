@@ -15,6 +15,15 @@ info: rtl8188fu support will be add to rtl8xxxu module of Linux kernel. https://
 
 `sudo cp ./rtl8188fu/firmware/rtl8188fufw.bin /lib/firmware/rtlwifi/`
 
+#### For Raspberry Pi 
+`sudo apt-get install build-essential git dkms raspberrypi-kernel-headers`
+
+`git clone https://github.com/kelebek333/rtl8188fu`
+
+`sudo dkms install ./rtl8188fu`
+
+`sudo cp ./rtl8188fu/firmware/rtl8188fufw.bin /lib/firmware/rtlwifi/`
+
 ------------------
 
 ## Configuration
